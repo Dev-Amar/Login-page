@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="login">
+        <div class="title">
+            <h3>Login</h3>
+        </div>
+        <form action="#">
+            <div class="inputbox">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <label>Email</label>
+                <input id="email" type="email" autofocus required>
+            </div>
+            <div class="inputbox">
+                <span><i class="fa-solid fa-lock"></i></span>
+                <label>password</label>
+                <input id="password" type="password" required>
+            </div>
+            <div class="remember-forget">
+                <input type="checkbox">
+                <p>remember me!</p>
+                <a href="#">Forget password?</a>
+            </div>
+            <div class="btn">
+                <button>Submit</button>
+            </div>
+        </form>
+
+
+    </div>
+</body>
+
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #eee;
+    }
+
+    body {
+        background-color: rgb(24, 23, 23);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: url(./media/games.webp);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .login {
+        width: 300px;
+        height: 350px;
+        border: rgb(255, 255, 255) 1px solid;
+        border-radius: 15px;
+        animation: login 1s infinite ease;
+        box-shadow: 15px 15px 50px black;
+    }
+
+    .title h3 {
+        font-size: 25px;
+        margin: 10px;
+        animation: title 5s infinite ease;
+    }
+
+    form {
+        width: 295px;
+        height: 300px;
+        border-radius: 20px;
+
+    }
+
+    .inputbox input {
+        padding: 10px;
+        width: 90%;
+        margin: 20px 0;
+        outline: none;
+        background: none;
+        border-top: transparent;
+        border-right: transparent;
+        border-left: transparent;
+        border-bottom: 1px white solid;
+    }
+
+    label {
+        font-size: 13px;
+        position: absolute;
+        font-weight: 400;
+    }
+
+    .remember-forget {
+        width: 295px;
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+        padding: 20px 5px;
+
+    }
+
+    .btn button {
+        cursor: pointer;
+        border: none;
+        background-color: rgb(219 16 16);
+        font-size: 1em;
+        padding: 10px;
+        border-radius: 5px;
+        transition: .3s;
+    }
+
+    .btn button:hover {
+        background-color: rgb(220, 97, 20);
+    }
+
+    @keyframes login {
+        0% {
+            border-bottom-color: blue;
+        }
+
+        25% {
+            border-right-color: red;
+        }
+
+        45% {
+            border-bottom-color: blue;
+        }
+
+        75% {
+            border-left-color: red;
+        }
+
+        100% {
+            border-top-color: blue;
+        }
+    }
+
+    @keyframes title {
+        0% {
+            color: red;
+        }
+
+        25% {
+            color: rgba(70, 70, 245, 0.961);
+        }
+
+        45% {
+            color: red;
+        }
+
+        75% {
+            color: rgba(70, 70, 245, 0.961);
+
+        }
+
+        100% {
+            color: red;
+
+        }
+    }
+</style>
